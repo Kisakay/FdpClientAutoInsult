@@ -1,0 +1,132 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 4/5/23 1:55 PM
+Description: Ticking entity
+
+java.lang.ClassCastException: net.minecraft.client.entity.EntityOtherPlayerMP cannot be cast to net.minecraft.client.entity.EntityPlayerSP
+	at net.kisakay.insultkikoos.InsultKikoos.onPlayerTick(InsultKikoos.java:108)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_InsultKikoos_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:49)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:352)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:208)
+	at net.minecraft.client.entity.EntityOtherPlayerMP.onUpdate(SourceFile:52)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1862)
+	at net.minecraft.world.World.updateEntity(World.java:1831)
+	at net.minecraft.world.World.updateEntities(World.java:1663)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2089)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1024)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:349)
+	at net.minecraft.client.main.Main.main(SourceFile:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.kisakay.insultkikoos.InsultKikoos.onPlayerTick(InsultKikoos.java:108)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_6_InsultKikoos_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:49)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:352)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:208)
+	at net.minecraft.client.entity.EntityOtherPlayerMP.onUpdate(SourceFile:52)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1862)
+	at net.minecraft.world.World.updateEntity(World.java:1831)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityOtherPlayerMP)
+	Entity ID: 21
+	Entity Name: _PeacefulTrees
+	Entity's Exact location: -9.78, 4.00, 6.13
+	Entity's Block location: -10.00,4.00,6.00 - World: (-10,4,6), Chunk: (at 6,0,6 in -1,0; contains blocks -16,0,0 to -1,255,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1663)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityPlayerSP['Player974'/29, l='MpServer', x=-4.50, y=4.00, z=0.50], EntityOtherPlayerMP['_PeacefulTrees'/21, l='MpServer', x=-9.78, y=4.00, z=6.13]]
+	Chunk stats: MultiplayerChunkCache: 10, 10
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: -4.00,5.00,3.00 - World: (-4,5,3), Chunk: (at 12,0,3 in -1,0; contains blocks -16,0,0 to -1,255,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 2049151 game time, 2049151 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 3 total; [EntityPlayerSP['Player974'/29, l='MpServer', x=-4.50, y=4.00, z=0.50], EntityOtherPlayerMP['_PeacefulTrees'/21, l='MpServer', x=-9.78, y=4.00, z=6.13], EntityOtherPlayerMP['_PeacefulTrees'/21, l='MpServer', x=-9.78, y=4.00, z=6.13]]
+	Retry entities: 0 total; []
+	Server brand: Spigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:347)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2536)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:370)
+	at net.minecraft.client.main.Main.main(SourceFile:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Linux (amd64) version 6.2.6-76060206-generic
+	Java Version: 1.8.0_362, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 1422688712 bytes (1356 MB) / 1608515584 bytes (1534 MB) up to 5585240064 bytes (5326 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.19 Powered by Forge 11.15.1.2318 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{8.0.99.99} [Forge Mod Loader] (forgeBin-1.8.9-11.15.1.2318-1.8.9.jar) 
+	UCHIJA	Forge{11.15.1.2318} [Minecraft Forge] (forgeBin-1.8.9-11.15.1.2318-1.8.9.jar) 
+	UCHIJA	insultkikoos{1.4} [insultkikoos] (insultkikoos-1.4.jar) 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 525.89.02' Renderer: 'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.8.9
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 525.89.02, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 12x AMD Ryzen 5 3600 6-Core Processor

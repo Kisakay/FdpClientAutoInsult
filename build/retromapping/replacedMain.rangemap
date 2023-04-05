@@ -1,0 +1,139 @@
+Symbol range map extraction starting
+Processing 2 files
+processing net/kisakay/insultkikoos/InsultKikoos.java
+@|net/kisakay/insultkikoos/InsultKikoos.java|8|32|net.kisakay.insultkikoos|package|net.kisakay.insultkikoos|(file)
+Class Start: net.kisakay.insultkikoos.InsultKikoos
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4098|4114|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent|
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4149|4155|String|class|java.lang.String
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4156|4161|MODID|field|net.kisakay.insultkikoos.InsultKikoos|MODID|
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4204|4210|String|class|java.lang.String
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4211|4218|VERSION|field|net.kisakay.insultkikoos.InsultKikoos|VERSION|
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4253|4262|Minecraft|class|net.minecraft.client.Minecraft
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4263|4265|mc|field|net.kisakay.insultkikoos.InsultKikoos|mc|
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4268|4277|Minecraft|class|net.minecraft.client.Minecraft
+   @|net/kisakay/insultkikoos/InsultKikoos.java|4278|4290|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4329|4333|init|method|net.kisakay.insultkikoos.InsultKikoos|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4334|4356|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4357|4362|event|param|net.kisakay.insultkikoos.InsultKikoos|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4374|4388|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4389|4398|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4399|4407|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4459|4471|onPlayerTick|method|net.kisakay.insultkikoos.InsultKikoos|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4472|4497|TickEvent.PlayerTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4498|4503|event|param|net.kisakay.insultkikoos.InsultKikoos|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4516|4525|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4538|4547|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4548|4560|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4572|4581|ArrayList|class|java.util.ArrayList
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4582|4588|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4610|4619|ArrayList|class|java.util.ArrayList
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4620|4626|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4639|4653|EntityPlayerSP|class|net.minecraft.client.entity.EntityPlayerSP
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4663|4672|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4673|4685|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4688|4697|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4722|4730|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4853|4866|isEntityAlive|method|net.minecraft.entity.Entity|isEntityAlive|()Z
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4884|4900|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4954|4970|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+      @|net/kisakay/insultkikoos/InsultKikoos.java|4986|4992|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5334|5340|Random|class|java.util.Random
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5354|5360|Random|class|java.util.Random
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5377|5387|Collection|class|java.util.Collection
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5388|5405|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5420|5422|mc|field|net.kisakay.insultkikoos.InsultKikoos|mc
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5423|5436|getNetHandler|method|net.minecraft.client.Minecraft|getNetHandler|()Lnet/minecraft/client/network/NetHandlerPlayClient;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5439|5455|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5476|5493|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5537|5543|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5568|5582|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5585|5592|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5629|5635|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5636|5645|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5646|5658|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5661|5670|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5671|5678|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5719|5722|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5800|5807|nextInt|method|java.util.Random|nextInt|(I)I
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5822|5826|size|method|java.util.Collection|size|()I
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5843|5849|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5874|5877|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5899|5905|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5940|5947|nextInt|method|java.util.Random|nextInt|(I)I
+      Field: Array Length, skipping
+      @|net/kisakay/insultkikoos/InsultKikoos.java|5979|5985|String|class|java.lang.String
+      @|net/kisakay/insultkikoos/InsultKikoos.java|6026|6033|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|net/kisakay/insultkikoos/InsultKikoos.java|6077|6086|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|net/kisakay/insultkikoos/InsultKikoos.java|6087|6096|sendQueue|field|net.minecraft.client.entity.EntityPlayerSP|sendQueue
+      @|net/kisakay/insultkikoos/InsultKikoos.java|6118|6132|addToSendQueue|method|net.minecraft.client.network.NetHandlerPlayClient|addToSendQueue|(Lnet/minecraft/network/Packet;)V
+      @|net/kisakay/insultkikoos/InsultKikoos.java|6137|6157|C01PacketChatMessage|class|net.minecraft.network.play.client.C01PacketChatMessage
+      @|net/kisakay/insultkikoos/InsultKikoos.java|6212|6228|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+   Method End: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+Class End  : net.kisakay.insultkikoos.InsultKikoos
+endProcessing net/kisakay/insultkikoos/InsultKikoos.java
+
+processing net/kisakay/insultkikoos/test.java
+@|net/kisakay/insultkikoos/test.java|8|32|net.kisakay.insultkikoos|package|net.kisakay.insultkikoos|(file)
+Class Start: net.kisakay.insultkikoos.test
+   @|net/kisakay/insultkikoos/test.java|638|650|isAimbotting|field|net.kisakay.insultkikoos.test|isAimbotting|
+   @|net/kisakay/insultkikoos/test.java|686|704|isSmoothAimbotting|field|net.kisakay.insultkikoos.test|isSmoothAimbotting|
+   @|net/kisakay/insultkikoos/test.java|739|757|isSilentAimbotting|field|net.kisakay.insultkikoos.test|isSilentAimbotting|
+   @|net/kisakay/insultkikoos/test.java|792|807|isAimbottingFOV|field|net.kisakay.insultkikoos.test|isAimbottingFOV|
+   @|net/kisakay/insultkikoos/test.java|838|847|Minecraft|class|net.minecraft.client.Minecraft
+   @|net/kisakay/insultkikoos/test.java|848|850|mc|field|net.kisakay.insultkikoos.test|mc|
+   @|net/kisakay/insultkikoos/test.java|853|862|Minecraft|class|net.minecraft.client.Minecraft
+   @|net/kisakay/insultkikoos/test.java|863|875|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|net/kisakay/insultkikoos/test.java|890|904|EntityPlayerSP|class|net.minecraft.client.entity.EntityPlayerSP
+   @|net/kisakay/insultkikoos/test.java|905|911|player|field|net.kisakay.insultkikoos.test|player|
+   @|net/kisakay/insultkikoos/test.java|914|916|mc|field|net.kisakay.insultkikoos.test|mc
+   @|net/kisakay/insultkikoos/test.java|917|926|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+   @|net/kisakay/insultkikoos/test.java|939|950|WorldClient|class|net.minecraft.client.multiplayer.WorldClient
+   @|net/kisakay/insultkikoos/test.java|951|956|world|field|net.kisakay.insultkikoos.test|world|
+   @|net/kisakay/insultkikoos/test.java|959|961|mc|field|net.kisakay.insultkikoos.test|mc
+   @|net/kisakay/insultkikoos/test.java|962|970|theWorld|field|net.minecraft.client.Minecraft|theWorld
+   Method Start: Aim()V
+      @|net/kisakay/insultkikoos/test.java|996|999|Aim|method|net.kisakay.insultkikoos.test|Aim|()V
+      @|net/kisakay/insultkikoos/test.java|1016|1025|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/test.java|1026|1038|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net/kisakay/insultkikoos/test.java|1041|1050|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|net/kisakay/insultkikoos/test.java|1105|1117|isAimbotting|field|net.kisakay.insultkikoos.test|isAimbotting
+      @|net/kisakay/insultkikoos/test.java|1134|1148|EntityPlayerSP|class|net.minecraft.client.entity.EntityPlayerSP
+      @|net/kisakay/insultkikoos/test.java|1158|1167|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/test.java|1168|1180|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net/kisakay/insultkikoos/test.java|1183|1192|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|net/kisakay/insultkikoos/test.java|1206|1217|WorldClient|class|net.minecraft.client.multiplayer.WorldClient
+      @|net/kisakay/insultkikoos/test.java|1226|1235|Minecraft|class|net.minecraft.client.Minecraft
+      @|net/kisakay/insultkikoos/test.java|1236|1248|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net/kisakay/insultkikoos/test.java|1251|1259|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|net/kisakay/insultkikoos/test.java|1273|1279|Entity|class|net.minecraft.entity.Entity
+      @|net/kisakay/insultkikoos/test.java|1289|1297|getEnemy|method|net.kisakay.insultkikoos.test|getEnemy|()Lnet/minecraft/entity/Entity;
+      @|net/kisakay/insultkikoos/test.java|1356|1374|isSmoothAimbotting|field|net.kisakay.insultkikoos.test|isSmoothAimbotting
+      @|net/kisakay/insultkikoos/test.java|1404|1406|mc|field|net.kisakay.insultkikoos.test|mc
+      @|net/kisakay/insultkikoos/test.java|1407|1422|objectMouseOver|field|net.minecraft.client.Minecraft|objectMouseOver
+      @|net/kisakay/insultkikoos/test.java|1434|1436|mc|field|net.kisakay.insultkikoos.test|mc
+      @|net/kisakay/insultkikoos/test.java|1437|1452|objectMouseOver|field|net.minecraft.client.Minecraft|objectMouseOver
+      @|net/kisakay/insultkikoos/test.java|1453|1462|typeOfHit|field|net.minecraft.util.MovingObjectPosition|typeOfHit
+      @|net/kisakay/insultkikoos/test.java|1466|1482|MovingObjectType|class|net.minecraft.util.MovingObjectPosition.MovingObjectType
+      @|net/kisakay/insultkikoos/test.java|1483|1489|ENTITY|field|net.minecraft.util.MovingObjectPosition.MovingObjectType|ENTITY
+   Method End: Aim()V
+   Method Start: getEnemy()Lnet/minecraft/entity/Entity;
+      @|net/kisakay/insultkikoos/test.java|2015|2023|getEnemy|method|net.kisakay.insultkikoos.test|getEnemy|()Lnet/minecraft/entity/Entity;
+      @|net/kisakay/insultkikoos/test.java|2008|2014|Entity|class|net.minecraft.entity.Entity
+      @|net/kisakay/insultkikoos/test.java|2037|2043|Entity|class|net.minecraft.entity.Entity
+      @|net/kisakay/insultkikoos/test.java|2143|2149|Object|class|java.lang.Object
+      @|net/kisakay/insultkikoos/test.java|2154|2156|mc|field|net.kisakay.insultkikoos.test|mc
+      @|net/kisakay/insultkikoos/test.java|2157|2165|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|net/kisakay/insultkikoos/test.java|2166|2182|loadedEntityList|field|net.minecraft.world.World|loadedEntityList
+      @|net/kisakay/insultkikoos/test.java|2215|2231|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase
+      @|net/kisakay/insultkikoos/test.java|2251|2267|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase
+      @|net/kisakay/insultkikoos/test.java|2273|2289|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase
+      @|net/kisakay/insultkikoos/test.java|2530|2536|System|class|java.lang.System
+      @|net/kisakay/insultkikoos/test.java|2537|2540|out|field|java.lang.System|out
+      @|net/kisakay/insultkikoos/test.java|2541|2548|println|method|java.io.PrintStream|println|(Ljava/lang/Object;)V
+   Method End: getEnemy()Lnet/minecraft/entity/Entity;
+Class End  : net.kisakay.insultkikoos.test
+endProcessing net/kisakay/insultkikoos/test.java
+
