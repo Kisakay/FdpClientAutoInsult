@@ -86,11 +86,11 @@ import java.util.List;
 import java.util.Random;
 
 public class sendCheese {
-        static Minecraft mc = Minecraft.getMinecraft();
-        static EntityPlayerSP player = mc.thePlayer;
+        static Minecraft mc = Minecraft.func_71410_x();
+        static EntityPlayerSP player = mc.field_71439_g;
 
         public static void sendMessage(String value) {
-                Minecraft minecraft = Minecraft.getMinecraft();
+                Minecraft minecraft = Minecraft.func_71410_x();
 
                 String[] messages = {
                         "FDPClient LOL TOO OP",
@@ -141,8 +141,8 @@ public class sendCheese {
                 String selectedMessage = messages[random.nextInt(messages.length)];
                 String messageWithPlayerName = selectedMessage.replace("%name%", value);
 
-                minecraft.thePlayer.sendQueue
-                                .addToSendQueue(new C01PacketChatMessage("[FDPCLIENT] " + messageWithPlayerName));
+                minecraft.field_71439_g.field_71174_a
+                                .func_147297_a(new C01PacketChatMessage("[FDPCLIENT] " + messageWithPlayerName));
 
         }
 

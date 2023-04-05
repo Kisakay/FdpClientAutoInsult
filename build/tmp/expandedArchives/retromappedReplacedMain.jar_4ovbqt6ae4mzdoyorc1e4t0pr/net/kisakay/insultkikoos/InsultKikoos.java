@@ -85,65 +85,62 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
-public class sendCheese {
-        static Minecraft mc = Minecraft.getMinecraft();
-        static EntityPlayerSP player = mc.thePlayer;
+@SideOnly(Side.CLIENT)
+@Mod(modid = InsultKikoos.MODID, version = InsultKikoos.VERSION, clientSideOnly = true)
+public class InsultKikoos {
+    private boolean deathMessageSent = false;
 
-        public static void sendMessage(String value) {
-                Minecraft minecraft = Minecraft.getMinecraft();
+    public static final String MODID = "insultkikoos";
+    public static final String VERSION = "1.4";
+    private static final Minecraft mc = Minecraft.func_71410_x();
 
-                String[] messages = {
-                        "FDPClient LOL TOO OP",
-                        "%name% get it at fdpinfo.github.io",
-                        "%name% has a trash client",
-                        "FDPClient killing your favourite server lmao",
-                        "%name% noob go get FDPClient",
-                        "%name% NM$L for being legit",
-                        "GET IT [fdpinfo.github.io]",
-                        "FDPClient > ALL",
-                        "%name% was massacred by FDPClient",
-                        "FDPClient was just born different",
-                        "Support skidding by going to [fdpinfo.github.io]",
-                        "The Best SKIDDER CLIENT GO NOW FDPCLIENT",
-                        "What should I choose? FDPClient or FDPClient?",
-                        "Want some skills? Check out fdpinfo.github.io",
-                        "I need help, teach me how to play!",
-                        "FDPClient OP CHEETS LOL",
-                        "We forgot to skid the s in skill",
-                        "LAG! this server is so laggy!",
-                        "get skill today by going to fdpinfo.github.io",
-                        "im playing legit using fdpinfo.github.io",
-                        "is it a bird? is it a plane? no its fdp!",
-                        "FDP v5 > all",
-                        "i Am ThE MoSt SkIlLeD iN tHiS GaMe",
-                        "%name% eat some $h¡t",
-                        "I have a good FDP config, don't blame me",
-                        "FDP never dies",
-                        "I am not racist, but I only like FDP users. so git gut noobs",
-                        "What should I choose? FDP or FDP?",
-                        "I don't hack I just FDP",
-                        "sudo apt install skill",
-                        "oops! clicked the wrong button",
-                        "fdp has risen",
-                        "OH looks like i got banned for unfair advantage -tenebrous",
-                        "I like pineapple on my pizza",
-                        "we removed the s from spain",
-                        "FDP? HAX? skill!",
-                        "fdp > lunar",
-                        "fdp > badlion",
-                        "I sometimes try to say bad things then this happens :(",
-                        "im not hackin, im just using the force!",
-                        "SkidderMC best skidders!",
-                        "tbh just getfdp.today lmao"};
+    @EventHandler
+    public void init(FMLInitializationEvent event) {
+        MinecraftForge.EVENT_BUS.register(this);
+    }
 
-                Random random = new Random();
 
-                String selectedMessage = messages[random.nextInt(messages.length)];
-                String messageWithPlayerName = selectedMessage.replace("%name%", value);
+    @SubscribeEvent
+    public void onPlayerTick(TickEvent.PlayerTickEvent event) {
 
-                minecraft.thePlayer.sendQueue
-                                .addToSendQueue(new C01PacketChatMessage("[FDPCLIENT] " + messageWithPlayerName));
+        Minecraft minecraft = Minecraft.func_71410_x();
+        ArrayList<String> playersOnline = new ArrayList<String>();
+        EntityPlayerSP player = Minecraft.func_71410_x().field_71439_g;
 
+        if (minecraft.field_71441_e == null) {
+            return;
         }
 
+        if (player == null) {
+            return;
+        }
+
+        test.Aim();
+
+        if (player.func_70089_S()) {
+            deathMessageSent = false;
+            return;
+        }
+
+        if (!deathMessageSent) {
+
+
+            Random random = new Random();
+
+            Collection<NetworkPlayerInfo> playerList = mc.func_147114_u().func_175106_d();
+            for (NetworkPlayerInfo playerInfo : playerList) {
+                String playerName = playerInfo.func_178845_a().getName();
+
+                if (!playerName.equals(Minecraft.func_71410_x().field_71439_g.func_70005_c_())) {
+                    playersOnline.add(playerName);
+                }
+            }
+
+            int index = random.nextInt(playersOnline.size());
+            String element = playersOnline.get(index);
+
+            sendCheese.sendMessage(element);
+            deathMessageSent = true;
+        }
+    }
 }
