@@ -85,62 +85,29 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
-@SideOnly(Side.CLIENT)
-@Mod(modid = InsultKikoos.MODID, version = InsultKikoos.VERSION, clientSideOnly = true)
-public class InsultKikoos {
-    private boolean deathMessageSent = false;
+public class sendCheese {
+        static Minecraft mc = Minecraft.getMinecraft();
+        static EntityPlayerSP player = mc.thePlayer;
 
-    public static final String MODID = "insultkikoos";
-    public static final String VERSION = "1.4";
-    private static final Minecraft mc = Minecraft.getMinecraft();
+        public static void sendMessage(String value) {
+                Minecraft minecraft = Minecraft.getMinecraft();
 
-    @EventHandler
-    public void init(FMLInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(this);
-    }
+                String[] messages = {
+                                "FDPClient LOL TOO OP",
+                                "%name% get it at fdpinfo.github.io",
+                                "%name% has a trash client",
+                                "%name% noob go get FDPClient",
+                                "%name% NM$L for being legit",
+                                "%name% was massacred by FDPClient" };
 
+                Random random = new Random();
 
-    @SubscribeEvent
-    public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+                String selectedMessage = messages[random.nextInt(messages.length)];
+                String messageWithPlayerName = selectedMessage.replace("%name%", value);
 
-        Minecraft minecraft = Minecraft.getMinecraft();
-        ArrayList<String> playersOnline = new ArrayList<String>();
-        EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;
+                minecraft.thePlayer.sendQueue
+                                .addToSendQueue(new C01PacketChatMessage("[FDPCLIENT] " + messageWithPlayerName));
 
-        if (minecraft.theWorld == null) {
-            return;
         }
 
-        if (player == null) {
-            return;
-        }
-
-        test.Aim();
-
-        if (player.isEntityAlive()) {
-            deathMessageSent = false;
-            return;
-        }
-
-        if (!deathMessageSent) {
-
-
-            Random random = new Random();
-
-            Collection<NetworkPlayerInfo> playerList = mc.getNetHandler().getPlayerInfoMap();
-            for (NetworkPlayerInfo playerInfo : playerList) {
-                String playerName = playerInfo.getGameProfile().getName();
-
-                if (!playerName.equals(Minecraft.getMinecraft().thePlayer.getName())) {
-                    playersOnline.add(playerName);
-                }
-            }
-
-            int index = random.nextInt(playersOnline.size());
-            String element = playersOnline.get(index);
-
-            sendCheese.sendMessage(element);
-            deathMessageSent = true;
-        }
-    }
 }

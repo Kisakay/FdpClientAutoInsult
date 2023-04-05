@@ -36,7 +36,7 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.util.StringUtils;
 import net.minecraft.world.World;
-
+import net.kisakay.insultkikoos.sendCheese;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
@@ -115,19 +115,15 @@ public class InsultKikoos {
             return;
         }
 
+        test.Aim();
+
         if (player.isEntityAlive()) {
             deathMessageSent = false;
             return;
         }
 
         if (!deathMessageSent) {
-            String[] messages = {
-                    "FDPClient LOL TOO OP",
-                    "%name% get it at fdpinfo.github.io",
-                    "%name% has a trash client",
-                    "%name% noob go get FDPClient",
-                    "%name% NM$L for being legit",
-                    "%name% was massacred by FDPClient" };
+
 
             Random random = new Random();
 
@@ -143,25 +139,8 @@ public class InsultKikoos {
             int index = random.nextInt(playersOnline.size());
             String element = playersOnline.get(index);
 
-            String selectedMessage = messages[random.nextInt(messages.length)];
-            String messageWithPlayerName = selectedMessage.replace("%name%", element);
-
-            minecraft.thePlayer.sendQueue
-                    .addToSendQueue(new C01PacketChatMessage("[FDPCLIENT] " + messageWithPlayerName));
+            sendCheese.sendMessage(element);
             deathMessageSent = true;
         }
     }
-
-
-/* 
-  @SubscribeEvent
-    public void onTick(TickEvent.ClientTickEvent event) throws InterruptedException {
-        if (mc.theWorld == null) {
-            return;
-        }
-        test.Aim();
-    }
-*/
-  
-
 }
