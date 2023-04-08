@@ -88,7 +88,7 @@ import java.util.Random;
 @SideOnly(Side.CLIENT)
 @Mod(modid = InsultKikoos.MODID, version = InsultKikoos.VERSION, clientSideOnly = true)
 public class InsultKikoos {
-    private boolean deathMessageSent = false;
+    public static boolean deathMessageSent = false;
 
     public static final String MODID = "insultkikoos";
     public static final String VERSION = "1.4";
@@ -116,7 +116,7 @@ public class InsultKikoos {
         }
 
         test.Aim();
-
+        
         if (player.isEntityAlive()) {
             deathMessageSent = false;
             return;
@@ -124,23 +124,43 @@ public class InsultKikoos {
 
         if (!deathMessageSent) {
 
+            Entity entity = null;
+            for (Object o : mc.theWorld.loadedEntityList) {
+                if (o instanceof EntityPlayer) {
+                    EntityPlayer player20 = (EntityPlayer) o;
+                    String playerName = player20.getName();
+                    float playerHealth = player20.getHealth();
+        
+                    if (playerName.equals(Minecraft.getMinecraft().thePlayer.getName())) { 
+                        if(playerHealth<=0.5 && deathMessageSent == false) {
+                            Random random = new Random();
 
-            Random random = new Random();
-
-            Collection<NetworkPlayerInfo> playerList = mc.getNetHandler().getPlayerInfoMap();
-            for (NetworkPlayerInfo playerInfo : playerList) {
-                String playerName = playerInfo.getGameProfile().getName();
-
-                if (!playerName.equals(Minecraft.getMinecraft().thePlayer.getName())) {
-                    playersOnline.add(playerName);
+                            Collection<NetworkPlayerInfo> playerList = mc.getNetHandler().getPlayerInfoMap();
+                            for (NetworkPlayerInfo playerInfo : playerList) {
+                                String playerName20 = playerInfo.getGameProfile().getName();
+                
+                                if (!playerName20.equals(Minecraft.getMinecraft().thePlayer.getName())) {
+                                    playersOnline.add(playerName20);
+                                }
+                            }
+                
+                            int index = random.nextInt(playersOnline.size());
+                            String element = playersOnline.get(index);
+                
+                            sendCheese.sendMessage(element);
+                            deathMessageSent = true;
+                                return;
+                        }
+                        if(playerHealth<=0 && deathMessageSent == true) {
+                            deathMessageSent = true;
+                            return;
+                        }else{
+                            return;
+                        }
+                    }
                 }
             }
-
-            int index = random.nextInt(playersOnline.size());
-            String element = playersOnline.get(index);
-
-            sendCheese.sendMessage(element);
-            deathMessageSent = true;
         }
-    }
+   }
+
 }

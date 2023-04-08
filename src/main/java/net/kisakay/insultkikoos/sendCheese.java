@@ -93,48 +93,48 @@ public class sendCheese {
                 Minecraft minecraft = Minecraft.getMinecraft();
 
                 String[] messages = {
-                        "FDPClient LOL TOO OP",
-                        "%name% get it at fdpinfo.github.io",
+                        "FeatherClient LOL TOO OP",
+                        "%name% get it at feathermc . com",
                         "%name% has a trash client",
-                        "FDPClient killing your favourite server lmao",
-                        "%name% noob go get FDPClient",
+                        "FeatherClient killing your favourite server lmao",
+                        "%name% noob go get FeatherClient",
                         "%name% NM$L for being legit",
-                        "GET IT [fdpinfo.github.io]",
-                        "FDPClient > ALL",
-                        "%name% was massacred by FDPClient",
-                        "FDPClient was just born different",
-                        "Support skidding by going to [fdpinfo.github.io]",
-                        "The Best SKIDDER CLIENT GO NOW FDPCLIENT",
-                        "What should I choose? FDPClient or FDPClient?",
-                        "Want some skills? Check out fdpinfo.github.io",
+                        "GET IT [feathermc . com]",
+                        "FeatherClient > ALL",
+                        "%name% was massacred by FeatherClient",
+                        "FeatherClient was just born different",
+                        "Support skidding by going to [feathermc . com]",
+                        "The Best SKIDDER CLIENT GO NOW FeatherClient",
+                        "What should I choose? FeatherClient or FeatherClient?",
+                        "Want some skills? Check out feathermc . com",
                         "I need help, teach me how to play!",
-                        "FDPClient OP CHEETS LOL",
+                        "FeatherClient OP CHEETS LOL",
                         "We forgot to skid the s in skill",
                         "LAG! this server is so laggy!",
-                        "get skill today by going to fdpinfo.github.io",
-                        "im playing legit using fdpinfo.github.io",
-                        "is it a bird? is it a plane? no its fdp!",
-                        "FDP v5 > all",
+                        "get skill today by going to feathermc . com",
+                        "im playing legit using feathermc . com",
+                        "is it a bird? is it a plane? no its feather!",
+                        "feather v5 > all",
                         "i Am ThE MoSt SkIlLeD iN tHiS GaMe",
                         "%name% eat some $h¡t",
-                        "I have a good FDP config, don't blame me",
-                        "FDP never dies",
-                        "I am not racist, but I only like FDP users. so git gut noobs",
-                        "What should I choose? FDP or FDP?",
-                        "I don't hack I just FDP",
+                        "I have a good feather config, don't blame me",
+                        "feather never dies",
+                        "I am not racist, but I only like feather users. so git gut noobs",
+                        "What should I choose? feather or feather?",
+                        "I don't hack I just feather",
                         "sudo apt install skill",
                         "oops! clicked the wrong button",
-                        "fdp has risen",
+                        "feather has risen",
                         "OH looks like i got banned for unfair advantage -tenebrous",
                         "I like pineapple on my pizza",
                         "we removed the s from spain",
-                        "FDP? HAX? skill!",
-                        "fdp > lunar",
-                        "fdp > badlion",
+                        "feather? HAX? skill!",
+                        "feather > lunar",
+                        "feather > badlion",
                         "I sometimes try to say bad things then this happens :(",
                         "im not hackin, im just using the force!",
                         "SkidderMC best skidders!",
-                        "tbh just getfdp.today lmao"};
+                        "tbh just getfeather.today lmao"};
 
                 Random random = new Random();
 
@@ -142,7 +142,7 @@ public class sendCheese {
                 String messageWithPlayerName = selectedMessage.replace("%name%", value);
 
                 minecraft.thePlayer.sendQueue
-                                .addToSendQueue(new C01PacketChatMessage("[FDPCLIENT] " + messageWithPlayerName));
+                                .addToSendQueue(new C01PacketChatMessage("[FeatherClient] " + messageWithPlayerName));
 
         }
 
