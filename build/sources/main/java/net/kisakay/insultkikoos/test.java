@@ -46,7 +46,7 @@ public class test {
                 float playerHealth = player.getHealth();
     
                 if (!playerName.equals(Minecraft.getMinecraft().thePlayer.getName())) { 
-                    if(playerHealth<=0 && deathMessageSent == false) {
+                    if(playerHealth<=2 && deathMessageSent == false) {
                             sendCheese.sendMessage(playerName);
                             deathMessageSent = true;
                             return entity;

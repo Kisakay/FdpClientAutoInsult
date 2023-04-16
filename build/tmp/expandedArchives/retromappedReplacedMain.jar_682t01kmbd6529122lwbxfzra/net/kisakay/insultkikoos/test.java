@@ -46,7 +46,7 @@ public class test {
                 float playerHealth = player.func_110143_aJ();
     
                 if (!playerName.equals(Minecraft.func_71410_x().field_71439_g.func_70005_c_())) { 
-                    if(playerHealth<=0 && deathMessageSent == false) {
+                    if(playerHealth<=2 && deathMessageSent == false) {
                             sendCheese.sendMessage(playerName);
                             deathMessageSent = true;
                             return entity;
