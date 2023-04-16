@@ -57,33 +57,33 @@ Class Start: net.kisakay.insultkikoos.InsultKikoos
       @|net\kisakay\insultkikoos\InsultKikoos.java|5442|5454|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
       @|net\kisakay\insultkikoos\InsultKikoos.java|5457|5466|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
       @|net\kisakay\insultkikoos\InsultKikoos.java|5467|5474|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5530|5546|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5587|5593|Random|class|java.util.Random
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5607|5613|Random|class|java.util.Random
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5646|5656|Collection|class|java.util.Collection
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5657|5674|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5689|5691|mc|field|net.kisakay.insultkikoos.InsultKikoos|mc
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5692|5705|getNetHandler|method|net.minecraft.client.Minecraft|getNetHandler|()Lnet/minecraft/client/network/NetHandlerPlayClient;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5708|5724|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5761|5778|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5838|5844|String|class|java.lang.String
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5871|5885|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5888|5895|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5966|5972|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5973|5982|Minecraft|class|net.minecraft.client.Minecraft
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5983|5995|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|5998|6007|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6008|6015|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6072|6075|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6219|6226|nextInt|method|java.util.Random|nextInt|(I)I
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6241|6245|size|method|java.util.Collection|size|()I
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6278|6284|String|class|java.lang.String
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6309|6312|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6366|6376|sendCheese|class|net.kisakay.insultkikoos.sendCheese
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6377|6388|sendMessage|method|net.kisakay.insultkikoos.sendCheese|sendMessage|(Ljava/lang/String;)V
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6427|6443|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6564|6580|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
-      @|net\kisakay\insultkikoos\InsultKikoos.java|6620|6636|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5528|5544|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5585|5591|Random|class|java.util.Random
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5605|5611|Random|class|java.util.Random
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5644|5654|Collection|class|java.util.Collection
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5655|5672|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5687|5689|mc|field|net.kisakay.insultkikoos.InsultKikoos|mc
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5690|5703|getNetHandler|method|net.minecraft.client.Minecraft|getNetHandler|()Lnet/minecraft/client/network/NetHandlerPlayClient;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5706|5722|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5759|5776|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5836|5842|String|class|java.lang.String
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5869|5883|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5886|5893|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5964|5970|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5971|5980|Minecraft|class|net.minecraft.client.Minecraft
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5981|5993|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|5996|6005|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6006|6013|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6070|6073|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6217|6224|nextInt|method|java.util.Random|nextInt|(I)I
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6239|6243|size|method|java.util.Collection|size|()I
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6276|6282|String|class|java.lang.String
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6307|6310|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6364|6374|sendCheese|class|net.kisakay.insultkikoos.sendCheese
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6375|6386|sendMessage|method|net.kisakay.insultkikoos.sendCheese|sendMessage|(Ljava/lang/String;)V
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6425|6441|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6562|6578|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
+      @|net\kisakay\insultkikoos\InsultKikoos.java|6618|6634|deathMessageSent|field|net.kisakay.insultkikoos.InsultKikoos|deathMessageSent
    Method End: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
 Class End  : net.kisakay.insultkikoos.InsultKikoos
 endProcessing net\kisakay\insultkikoos\InsultKikoos.java

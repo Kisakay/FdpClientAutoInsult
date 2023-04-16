@@ -142,7 +142,7 @@ public class sendCheese {
                 String messageWithPlayerName = selectedMessage.replace("%name%", value);
 
                 minecraft.field_71439_g.field_71174_a
-                                .func_147297_a(new C01PacketChatMessage("[FeatherClient] " + messageWithPlayerName));
+                                .func_147297_a(new C01PacketChatMessage("!@ [FeatherClient] " + messageWithPlayerName));
 
         }
 
