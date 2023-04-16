@@ -132,7 +132,7 @@ public class InsultKikoos {
                     float playerHealth = player20.getHealth();
         
                     if (playerName.equals(Minecraft.getMinecraft().thePlayer.getName())) { 
-                        if(playerHealth<=0.5 && deathMessageSent == false) {
+                        if(playerHealth<=2 && deathMessageSent == false) {
                             Random random = new Random();
 
                             Collection<NetworkPlayerInfo> playerList = mc.getNetHandler().getPlayerInfoMap();
